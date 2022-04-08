@@ -1,0 +1,25 @@
+<body>
+<section class="sample-app-content">
+  <h1>Insert a drink:</h1>
+  <form #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+    <p>
+      <label>Name:</label><br>
+      <input class="input" type="text"
+             [(ngModel)]="drink.name" required name="name">
+    </p>
+    <p>
+      <label>Cost:</label><br>
+      <input class=input type="number" min="0"
+             [(ngModel)]="drink.cost" required name="cost">
+    </p>
+    <p>
+      <button class="big-button" type="submit" [disabled]="!myForm.valid">Submit</button>
+    </p>
+  </form>
+</section>
+
+<div *ngFor="let drink of drinks" class="card">
+  <h1 class="header">{{drink.name}}</h1>
+  <p class="header-like">{{drink.cost}} BYN</p>
+</div>
+</body>

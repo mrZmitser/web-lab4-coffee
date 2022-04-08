@@ -1,0 +1,35 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: antiquewhite;
+  color: #4d3d3a;
+  font-size: larger;
+}
+
+.header-like {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.input {
+  font-size: medium;
+  width: 50%;
+}
+
+.header {
+  padding: 1px;
+  text-align: center;
+  background-color: #604C40;
+  color: antiquewhite;
+  font-size: 30px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #604C40;
+  color: antiquewhite;
+  text-align: center;
+  padding: 2px;
+}
